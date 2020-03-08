@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Register Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Stardos Stencil' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="register2.css" type="text/css">
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="wrapper">
+            <div id="headwrap">
+            <div id="header">R E G I S T E R</div>
+            </div>
+            <form id="valForm" method="POST" action="javascript:showPopup();" name="myForm" onsubmit="return validate()">
+
+                            <div class="field">
+                                <label>Name:</label>
+                                    <input type="text" id="username"  name="Name" class="input"><div id="check"></div>
+                                    <div id="name_error" class="error"></div>
+                            </div>
+
+                                <div class="field">
+                                    <label>College:</label>
+                                        <input type="text" id="adress" name="Adress" class="input"><div id="check2"></div>
+
+
+                                    </div>
+
+                            <div class="field">
+                                 <label>Mobile:</label>
+                                       <input type="text" id="city" name="City" class="input"><div id="check3"></div>
+
+
+                                   </div>
+
+                             <div class="field">
+                            <label>Event</label><br></br>
+                            <label>Day One:</label>
+                        <select id="event2" name="event2" class="input" >
+                            <option value="0"> -- Select Event -- </option>
+
+                        </select>
+                        <label>Day Two:</label>
+                        <select id="event2" name="event2" class="input" >
+                            <option value="0"> -- Select Event -- </option>
+
+                        </select>
+                        <label>Day Three:</label>
+                        <select id="event3" name="event3" class="input" >
+                          <label>Day Three</label>  <option value="0"> -- Select Event -- </option>
+
+                        </select>
+
+                        <div id="country_error" class="error"></div>
+                        </div>
+
+                        <div class="field">
+                            <label>E-mail:</label>
+                        <input type="text" id="email" name="Email" class="input"><div id="check5"></div>
+
+                        <div id="email_error" class="error"></div>
+                        </div>
+                        <div class="field">
+                            <label>Food:</label>
+                        <input type="radio" id="yes1" name="rad1" value="yes"><label>yes</label>
+                        <input type="radio" id="no1" name="rad1" value="no"><label>no</label>
+
+
+                        </div>
+                        <div class="field">
+                            <label>Accomadation:</label>
+                        <input type="radio" id="yes" name="rad2" value="yes"><label>yes</label>
+                        <input type="radio" id="no" name="rad2" value="no"><label>no</label>
+
+
+                        </div>
+
+
+                        <div id="bottomdiv">
+                            <button type="submit" value="submit" class="btn" name="mySubmit"><span id="submit">&#9472; Register &#9472;</span></button>
+                       </div>&#26;
+                    </form>
+                    </div>
+                </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="close">&times;</div>
+      <p class="text">Thank you, for filling in the form.</p>
+    </div>
+
+  </div>
+
+    <script src="register2.js"></script>
+</body>
+</html>
